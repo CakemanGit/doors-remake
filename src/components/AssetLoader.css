@@ -1,0 +1,64 @@
+.asset-loading {
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(ellipse at center, rgb(49 37 31 / 68%), rgb(7 7 8 / 98%)),
+    #080808;
+  color: #eee4d2;
+  font-family: Georgia, 'Times New Roman', serif;
+  text-align: center;
+}
+
+.asset-loading__card {
+  width: min(360px, 100%);
+}
+
+.asset-loading__eyebrow {
+  color: #c8a874;
+  font: 11px/1.2 system-ui, sans-serif;
+  letter-spacing: 0.38em;
+}
+
+.asset-loading__title {
+  margin: 16px 0 8px;
+  color: #eee4d2;
+  font-size: clamp(24px, 5vw, 34px);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.asset-loading__message {
+  overflow: hidden;
+  margin: 0 0 22px;
+  color: #a9a195;
+  font: 12px/1.5 system-ui, sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.asset-loading__track {
+  overflow: hidden;
+  height: 3px;
+  border: 1px solid rgb(222 194 143 / 34%);
+  background: rgb(255 255 255 / 8%);
+}
+
+.asset-loading__fill {
+  display: block;
+  height: 100%;
+  background: #c8a874;
+  box-shadow: 0 0 12px rgb(200 168 116 / 55%);
+  transition: width 180ms ease-out;
+}
+
+.asset-loading__percentage {
+  display: block;
+  margin-top: 10px;
+  color: #c8a874;
+  font: 11px/1.2 system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
